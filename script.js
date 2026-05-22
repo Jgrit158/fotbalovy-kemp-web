@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<span>Odesilam...</span>';
+        submitBtn.innerHTML = '<span>Odesílám...</span>';
         submitBtn.disabled = true;
 
         try {
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-            alert('Omlouvame se, doslo k chybe. Zkuste to prosim znovu nebo nas kontaktujte emailem.');
+            alert('Omlouváme se, došlo k chybě. Zkuste to prosím znovu nebo nás kontaktujte emailem.');
         }
     });
 
