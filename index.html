@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Football Camp | Fotbalovy Kemp pro mlad talenty</title>
+    <meta name="description" content="Premiovz fotbalovz kemp pro deti 7-14 let. Videoanalyza, profi treneri, zdrava vyziva, individualni pristup. Posun svuj talent na novou uroven.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/>
+                    <path d="M18 2C18 2 24 10 24 18C24 26 18 34 18 34" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M18 2C18 2 12 10 12 18C12 26 18 34 18 34" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="3" y1="14" x2="33" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="3" y1="22" x2="33" y2="22" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <span>ELITE <strong>CAMP</strong></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#o-kempu">O kempu</a>
+                <a href="#program">Program</a>
+                <a href="#tym">Nas tym</a>
+                <a href="#zazemi">Zazemi</a>
+                <a href="#registrace" class="nav-cta">Registrace</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Pro hrace 7 &ndash; 14 let
+            </div>
+            <h1 class="hero-title animate-in">
+                <span class="title-line">Posun svuj</span>
+                <span class="title-line title-accent">fotbalovy talent</span>
+                <span class="title-line">na novou uroven</span>
+            </h1>
+            <p class="hero-desc animate-in">
+                Premiovz kemp s videoanalyzou, profi trenery a individualnvm prjstupem.
+                Misto, kde se mladi hraci ucj myslet a hrat jako profici.
+            </p>
+            <div class="hero-actions animate-in">
+                <a href="#registrace" class="btn btn-primary">
+                    <span>Registrovat djte</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#o-kempu" class="btn btn-outline">Zjistit vjce</a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">dnj intenzivnjho treninku</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">profj treneru a specialistu</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="40">0</span>
+                    <span class="stat-label">maximalne detj v turnusu</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+        <!-- Floating 3D elements that react to mouse -->
+        <div class="hero-float float-1" data-speed="0.03">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><polygon points="30,5 55,50 5,50" stroke="rgba(212,175,55,0.3)" stroke-width="1" fill="none"/></svg>
+        </div>
+        <div class="hero-float float-2" data-speed="0.05">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="rgba(212,175,55,0.2)" stroke-width="1" fill="none"/></svg>
+        </div>
+        <div class="hero-float float-3" data-speed="0.02">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><rect x="10" y="10" width="60" height="60" stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none" rx="8"/></svg>
+        </div>
+    </section>
+
+    <!-- O Kempu Section -->
+    <section class="section section-dark" id="o-kempu">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Co nas odlisuje</span>
+                <h2 class="section-title">Vjce nez bezny<br>fotbalovy kemp</h2>
+                <p class="section-desc">Kombinujeme profesionalnj trenink s modernj technologij, vzdelavanjm o vyzive a individualnj pecj o kazdeho hrace.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card reveal" data-tilt>
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="8" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 14h36" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="26" r="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M21 26l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="14" y1="40" x2="34" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="24" y1="36" x2="24" y2="40" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">Videoanalyza treninku</h3>
+                    <p class="pillar-desc">Kazdy hrac dostane osobnj video rozbor sveho vykonu. Trener na tabletu ukazuje, co zlepsit v technice, pohybu i taktice.</p>
+                    <div class="pillar-glow"></div>
+                </div>
+                <div class="pillar-card reveal" data-tilt>
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 40c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M30 12l4-4m0 0l-2-2m2 2l2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">Profi trenersky tym</h3>
+                    <p class="pillar-desc">Treneri s licencemj UEFA a FACR, zdravotnjk a specialiste na vyzjvu. Vsichni na jednom mjste pro vase dite.</p>
+                    <div class="pillar-glow"></div>
+                </div>
+                <div class="pillar-card reveal" data-tilt>
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 6l4 8h8l-6 5 2 9-8-5-8 5 2-9-6-5h8l4-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M8 38h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 42h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">Individualnj report</h3>
+                    <p class="pillar-desc">Kazdy hrac obdrzj osobnj hracsky report s hodnocenjm, doporucenimi a vyzivovym planem na mjru.</p>
+                    <div class="pillar-glow"></div>
+                </div>
+                <div class="pillar-card reveal" data-tilt>
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 8h8v6a4 4 0 01-8 0V8z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 18c0-2 2-4 8-4s8 2 8 4v2H16v-2z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="30" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 30l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24 38v4M20 42h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">Zdrava vyziva</h3>
+                    <p class="pillar-desc">Prednasky o spravne strave pro mlade sportovce. Deti se nauci, jak se stravovat pro maximalnj vykon.</p>
+                    <div class="pillar-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section class="section section-light" id="program">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Dennj program</span>
+                <h2 class="section-title">5 dnj, ktere<br>zmeni tvou hru</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">07:00</div>
+                    <div class="timeline-content">
+                        <h4>Rannj rozcvicka &amp; snidane</h4>
+                        <p>Aktivnj probuzeni a energeticka snidane sestavena nutricnjm specialistou.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">09:00</div>
+                    <div class="timeline-content">
+                        <h4>Dopolednj trenink</h4>
+                        <p>Technicko-takticky trenink vedeny UEFA licencovanymi trenery. Prace s mjcem, kombinace, hernjch situace.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">12:00</div>
+                    <div class="timeline-content">
+                        <h4>Obed &amp; regenerace</h4>
+                        <p>Plnohodnotny obed, cas na odpocinek a neformalnj aktivity.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">14:00</div>
+                    <div class="timeline-content">
+                        <h4>Prednaska / Video rozbor</h4>
+                        <p>Stridave prednasky o vyzive a individualnj video analyza dopolednjho treninku.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">16:00</div>
+                    <div class="timeline-content">
+                        <h4>Odpolednj trenink &amp; zapas</h4>
+                        <p>Hernj trenink, zapasove situace a turnajove utkani. Aplikace nauceneho v praxi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-time">18:30</div>
+                    <div class="timeline-content">
+                        <h4>Vecere &amp; vecernj program</h4>
+                        <p>Spolecna vecere, teambuilding, filmove vecery a rjzene volnocasove aktivity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section section-dark" id="tym">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Nas tym</span>
+                <h2 class="section-title">Profesionalove,<br>kterym sverite sve deti</h2>
+                <p class="section-desc">Pred kempem se vsichni potkame na spolecne schuzce, kde se treneri a personalnj tym osobne predstavj rodicum.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal" data-tilt>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="14" stroke="currentColor" stroke-width="2"/><path d="M16 68c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="team-badge">Hlavnj trener</div>
+                    </div>
+                    <h4 class="team-name">Jan Novak</h4>
+                    <p class="team-role">UEFA A licence | 15 let zkusenostj</p>
+                    <p class="team-bio">Byvaly hrac 1. ligy, nyni trenujicj mladez ve FC Viktoria Plzen.</p>
+                </div>
+                <div class="team-card reveal" data-tilt>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="14" stroke="currentColor" stroke-width="2"/><path d="M16 68c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="team-badge">Asistent</div>
+                    </div>
+                    <h4 class="team-name">Petr Svoboda</h4>
+                    <p class="team-role">UEFA B licence | Kondicnj trener</p>
+                    <p class="team-bio">Specialista na rozvoj rychlosti a koordinace u mladych hracu.</p>
+                </div>
+                <div class="team-card reveal" data-tilt>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="14" stroke="currentColor" stroke-width="2"/><path d="M16 68c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="team-badge">Zdravotnjk</div>
+                    </div>
+                    <h4 class="team-name">MUDr. Klara Dvorakova</h4>
+                    <p class="team-role">Sportovnj lekarka</p>
+                    <p class="team-bio">Specializace na detskou sportovnj medicjnu. Prjtomna po celou dobu kempu.</p>
+                </div>
+                <div class="team-card reveal" data-tilt>
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder ambassador">
+                            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="14" stroke="currentColor" stroke-width="2"/><path d="M16 68c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="team-badge badge-gold">Ambasador</div>
+                    </div>
+                    <h4 class="team-name">Pavel Sulc</h4>
+                    <p class="team-role">Profesionalnj fotbalista</p>
+                    <p class="team-bio">Ambasador kempu a motivace pro vsechny mlade hrace. Osobnj setkanj s ucastnjky.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zazemi Section -->
+    <section class="section section-light" id="zazemi">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Zazemi &amp; Ubytovani</span>
+                <h2 class="section-title">Sportovnj stredisko<br>pro samotne profiky</h2>
+            </div>
+            <div class="facility-grid">
+                <div class="facility-card facility-large reveal">
+                    <div class="facility-image">
+                        <div class="facility-placeholder">
+                            <svg viewBox="0 0 120 80" fill="none"><rect x="10" y="30" width="100" height="40" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M30 30V20h60v10" stroke="currentColor" stroke-width="1.5"/><line x1="60" y1="30" x2="60" y2="70" stroke="currentColor" stroke-width="1"/><circle cx="40" cy="50" r="8" stroke="currentColor" stroke-width="1"/><circle cx="80" cy="50" r="8" stroke="currentColor" stroke-width="1"/></svg>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h4>Outdoorova hriste</h4>
+                        <p>Profesionalnj travnaty teren s umelym osvetlenjm pro vecernj treninky.</p>
+                    </div>
+                </div>
+                <div class="facility-card reveal">
+                    <div class="facility-image">
+                        <div class="facility-placeholder">
+                            <svg viewBox="0 0 120 80" fill="none"><rect x="5" y="10" width="110" height="60" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M5 25h110" stroke="currentColor" stroke-width="1"/><rect x="20" y="35" width="30" height="25" rx="2" stroke="currentColor" stroke-width="1"/><rect x="70" y="35" width="30" height="25" rx="2" stroke="currentColor" stroke-width="1"/></svg>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h4>Indoorova hala</h4>
+                        <p>Pro pripad neprizniveho pocasj. Treninky pokracujj za kazdych podmjnek.</p>
+                    </div>
+                </div>
+                <div class="facility-card reveal">
+                    <div class="facility-image">
+                        <div class="facility-placeholder">
+                            <svg viewBox="0 0 120 80" fill="none"><rect x="15" y="20" width="35" height="50" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="65" y="20" width="35" height="50" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="20" y="30" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1"/><rect x="35" y="30" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1"/><rect x="70" y="30" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1"/><rect x="85" y="30" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1"/></svg>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h4>Ubytovanj</h4>
+                        <p>Pohodlne pokoje primo v areallu strediska. Plna penze 5x denne.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What you get Section -->
+    <section class="section section-accent" id="balicek">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag section-tag-light">Co ziskate</span>
+                <h2 class="section-title title-light">Vsechno v jednom<br>kempovem baljcku</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item reveal">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div>
+                        <h4>Treninkovy set</h4>
+                        <p>Mikina, teplaky, triko a kratasy s logem kempu</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div>
+                        <h4>Individualnj hracsky report</h4>
+                        <p>Osobnj hodnocenj s doporucenjmi pro dalsi rozvoj</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div>
+                        <h4>Online prezentace</h4>
+                        <p>Prjstup k materialum z prednasek i po skoncenj kempu</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div>
+                        <h4>Plna penze</h4>
+                        <p>5x denne, strava sestavena nutricnjm specialistou</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div>
+                        <h4>Ubytovanj</h4>
+                        <p>Ve sportovnjm stredisku primo u hrist</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="benefit-check">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div>
+                        <h4>Vyzivovy plan</h4>
+                        <p>Na mjru pro kazdeho hrace na dalsj obdobj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="section section-dark" id="registrace">
+        <div class="container">
+            <div class="reg-layout">
+                <div class="reg-info reveal">
+                    <span class="section-tag">Registrace</span>
+                    <h2 class="section-title">Zajistete mjsto<br>pro sve djte</h2>
+                    <p class="section-desc">Kapacita je omezena na 40 detj v turnusu pro zajistenj individualjnjho prjstupu. Registrujte se vcas.</p>
+                    <div class="reg-terminy">
+                        <h4>Termjny 2026</h4>
+                        <div class="termin-card">
+                            <div class="termin-dates">
+                                <span class="termin-month">Cervenec</span>
+                                <span class="termin-range">7. &ndash; 11. 7. 2026</span>
+                            </div>
+                            <span class="termin-status status-open">Volna mjsta</span>
+                        </div>
+                        <div class="termin-card">
+                            <div class="termin-dates">
+                                <span class="termin-month">Srpen</span>
+                                <span class="termin-range">4. &ndash; 8. 8. 2026</span>
+                            </div>
+                            <span class="termin-status status-open">Volna mjsta</span>
+                        </div>
+                    </div>
+                    <div class="reg-price">
+                        <span class="price-label">Cena za turnus</span>
+                        <span class="price-amount">12 900 Kc</span>
+                        <span class="price-note">vcetne vsech sluzeb, stravy a ubytovanj</span>
+                    </div>
+                </div>
+                <div class="reg-form-container reveal">
+                    <form class="reg-form" id="registrationForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <h3 class="form-title">Registracnj formular</h3>
+
+                        <div class="form-group">
+                            <label for="childName">Jmeno a prjjmenj djtete *</label>
+                            <input type="text" id="childName" name="childName" required placeholder="Jan Novak">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="childAge">Vek *</label>
+                                <select id="childAge" name="childAge" required>
+                                    <option value="">Vyberte</option>
+                                    <option value="7">7 let</option>
+                                    <option value="8">8 let</option>
+                                    <option value="9">9 let</option>
+                                    <option value="10">10 let</option>
+                                    <option value="11">11 let</option>
+                                    <option value="12">12 let</option>
+                                    <option value="13">13 let</option>
+                                    <option value="14">14 let</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="position">Pozice</label>
+                                <select id="position" name="position">
+                                    <option value="">Vyberte</option>
+                                    <option value="brankar">Brankar</option>
+                                    <option value="obrance">Obrance</option>
+                                    <option value="zaloznik">Zaloznjk</option>
+                                    <option value="utocnik">Utocnjk</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="club">Soucasny klub</label>
+                            <input type="text" id="club" name="club" placeholder="FK Priklad">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="termin">Termin *</label>
+                            <select id="termin" name="termin" required>
+                                <option value="">Vyberte termin</option>
+                                <option value="cervenec-2026">7. - 11. cervence 2026</option>
+                                <option value="srpen-2026">4. - 8. srpna 2026</option>
+                            </select>
+                        </div>
+
+                        <hr class="form-divider">
+
+                        <div class="form-group">
+                            <label for="parentName">Jmeno rodice *</label>
+                            <input type="text" id="parentName" name="parentName" required placeholder="Jana Novakova">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="email@priklad.cz">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+420 xxx xxx xxx">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="health">Zdravotnj omezenj / Alergie / Dieta</label>
+                            <textarea id="health" name="health" rows="3" placeholder="Prosim uveste pripadne alergie, zdravotnj omezenj nebo specialnj stravovacj potreby..."></textarea>
+                        </div>
+
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="gdpr" name="gdpr" required>
+                            <label for="gdpr">Souhlasjm se zpracovanjm osobnjch udaju pro ucely registrace *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Odeslat registraci</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+
+                        <div class="form-success" id="formSuccess">
+                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M15 25l6 6 12-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <h4>Registrace odeslana!</h4>
+                            <p>Dekujeme. Ozveme se vam s potvrzenjm na zadany email.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 2C18 2 24 10 24 18C24 26 18 34 18 34" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M18 2C18 2 12 10 12 18C12 26 18 34 18 34" stroke="currentColor" stroke-width="1.5"/>
+                            <line x1="3" y1="14" x2="33" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                            <line x1="3" y1="22" x2="33" y2="22" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <span>ELITE <strong>CAMP</strong></span>
+                    </a>
+                    <p>Premiovz fotbalovy kemp pro mlade talenty. Posun svuj talent na profesionalnj uroven.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigace</h4>
+                    <a href="#o-kempu">O kempu</a>
+                    <a href="#program">Program</a>
+                    <a href="#tym">Nas tym</a>
+                    <a href="#zazemi">Zazemi</a>
+                    <a href="#registrace">Registrace</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <a href="mailto:info@elitecamp.cz">info@elitecamp.cz</a>
+                    <a href="tel:+420123456789">+420 123 456 789</a>
+                    <p>Sportovnj stredisko<br>Plzen, Ceska republika</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Football Camp. Vsechna prava vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
