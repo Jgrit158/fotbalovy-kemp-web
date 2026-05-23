@@ -271,17 +271,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ============================================
-    // PARALLAX ON SCROLL - subtle depth effect
-    // ============================================
-    const hero = document.querySelector('.hero-content');
-
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        if (scrolled < window.innerHeight) {
-            hero.style.transform = `translateY(${scrolled * 0.3}px)`;
-            hero.style.opacity = 1 - (scrolled / (window.innerHeight * 0.8));
-        }
-    });
+    // Parallax removed - was causing visibility issues
 
 });

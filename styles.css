@@ -379,11 +379,15 @@ img { max-width: 100%; display: block; }
 
 /* Hero Stats */
 .hero-stats {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 48px;
-    width: 100%;
     padding: 0 20px;
 }
 
