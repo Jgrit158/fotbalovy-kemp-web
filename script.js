@@ -175,9 +175,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 counterObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.1 });
 
-    statNumbers.forEach(el => counterObserver.observe(el));
+    statNumbers.forEach(el => {
+        // Set initial value immediately visible
+        el.textContent = '0';
+        counterObserver.observe(el);
+    });
 
     // ============================================
     // PARTICLES - floating ambient particles
