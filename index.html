@@ -89,7 +89,7 @@
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="40">0</span>
+                    <span class="stat-number" data-count="20">0</span>
                     <span class="stat-label">maximálně dětí v turnusu</span>
                 </div>
             </div>
@@ -399,128 +399,339 @@
         </div>
     </section>
 
-    <!-- Registration Section -->
+    <!-- Program Selector Section -->
     <section class="section section-dark" id="registrace">
         <div class="container">
-            <div class="reg-layout">
-                <div class="reg-info reveal">
-                    <span class="section-tag">Registrace</span>
-                    <h2 class="section-title">Zajistěte místo<br>pro své dítě</h2>
-                    <p class="section-desc">Kapacita je omezena na 40 dětí v turnusu pro zajištění individuálního přístupu. Registrujte se včas.</p>
-                    <div class="reg-terminy">
-                        <h4>Termíny 2026</h4>
-                        <div class="termin-card">
-                            <div class="termin-dates">
-                                <span class="termin-month">Červenec</span>
-                                <span class="termin-range">7. &ndash; 11. 7. 2026</span>
-                            </div>
-                            <span class="termin-status status-open">Volná místa</span>
+            <div class="section-header reveal">
+                <span class="section-tag">Registrace</span>
+                <h2 class="section-title">Vyberte si svůj<br>program</h2>
+                <p class="section-desc">Nabízíme dva typy programů — víkendový kemp i prázdninový turnus. Kapacita je omezena na 20 dětí pro maximální individuální přístup.</p>
+            </div>
+
+            <!-- Program Tabs -->
+            <div class="program-tabs reveal">
+                <button class="program-tab active" data-program="vikend">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 10h18" stroke="currentColor" stroke-width="2"/><path d="M8 2v4M16 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <span>Víkendový kemp</span>
+                </button>
+                <button class="program-tab" data-program="prazdniny">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Prázdninový turnus</span>
+                </button>
+            </div>
+
+            <!-- Víkendový kemp -->
+            <div class="program-panel active" id="panel-vikend">
+                <div class="reg-layout">
+                    <div class="reg-info reveal">
+                        <div class="program-badge-row">
+                            <span class="program-type-badge">Pá &ndash; Ne &bull; 3 dny</span>
+                            <span class="program-capacity-badge">Max 20 dětí</span>
                         </div>
-                        <div class="termin-card">
-                            <div class="termin-dates">
-                                <span class="termin-month">Srpen</span>
-                                <span class="termin-range">4. &ndash; 8. 8. 2026</span>
+                        <h3 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 12px;">Víkendový kemp</h3>
+                        <p class="section-desc" style="margin: 0 0 24px 0;">Intenzivní víkend plný tréninku, video rozboru a zábavy. Ideální pro první zkušenost s naší akademií nebo jako pravidelný tréninkový doplněk.</p>
+
+                        <div class="program-includes">
+                            <h4>Co je zahrnuto</h4>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Tréninky vedené profi trenéry (Pá odpoledne &ndash; Ne dopoledne)
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Video rozbor tréninku
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Plná penze &amp; ubytování
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Zdravotník na místě
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="reg-terminy">
+                            <h4>Termíny 2026</h4>
+                            <div class="termin-card">
+                                <div class="termin-dates">
+                                    <span class="termin-month">Červen</span>
+                                    <span class="termin-range">12. &ndash; 14. 6. 2026</span>
+                                </div>
+                                <span class="termin-status status-open">Volná místa</span>
                             </div>
-                            <span class="termin-status status-open">Volná místa</span>
+                            <div class="termin-card">
+                                <div class="termin-dates">
+                                    <span class="termin-month">Září</span>
+                                    <span class="termin-range">4. &ndash; 6. 9. 2026</span>
+                                </div>
+                                <span class="termin-status status-open">Volná místa</span>
+                            </div>
+                        </div>
+
+                        <div class="reg-price">
+                            <span class="price-label">Cena za víkend</span>
+                            <span class="price-amount">3 500 Kč</span>
+                            <span class="price-note">včetně stravy, ubytování a programu</span>
                         </div>
                     </div>
-                    <div class="reg-price">
-                        <span class="price-label">Cena za turnus</span>
-                        <span class="price-amount">12 900 Kč</span>
-                        <span class="price-note">včetně všech služeb, stravy a ubytování</span>
+
+                    <div class="reg-form-container reveal">
+                        <form class="reg-form" id="registrationFormVikend" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <input type="hidden" name="program" value="Víkendový kemp">
+                            <h3 class="form-title">Registrace &mdash; Víkendový kemp</h3>
+
+                            <div class="form-group">
+                                <label for="vk-childName">Jméno a příjmení dítěte *</label>
+                                <input type="text" id="vk-childName" name="childName" required placeholder="Jan Novák">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vk-childAge">Věk *</label>
+                                    <select id="vk-childAge" name="childAge" required>
+                                        <option value="">Vyberte</option>
+                                        <option value="7">7 let</option>
+                                        <option value="8">8 let</option>
+                                        <option value="9">9 let</option>
+                                        <option value="10">10 let</option>
+                                        <option value="11">11 let</option>
+                                        <option value="12">12 let</option>
+                                        <option value="13">13 let</option>
+                                        <option value="14">14 let</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vk-position">Pozice</label>
+                                    <select id="vk-position" name="position">
+                                        <option value="">Vyberte</option>
+                                        <option value="brankar">Brankář</option>
+                                        <option value="obrance">Obránce</option>
+                                        <option value="zaloznik">Záložník</option>
+                                        <option value="utocnik">Útočník</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vk-club">Současný klub</label>
+                                <input type="text" id="vk-club" name="club" placeholder="FK Příklad">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vk-termin">Termín *</label>
+                                <select id="vk-termin" name="termin" required>
+                                    <option value="">Vyberte termín</option>
+                                    <option value="vikend-cerven-2026">12. – 14. června 2026</option>
+                                    <option value="vikend-zari-2026">4. – 6. září 2026</option>
+                                </select>
+                            </div>
+
+                            <hr class="form-divider">
+
+                            <div class="form-group">
+                                <label for="vk-parentName">Jméno rodiče *</label>
+                                <input type="text" id="vk-parentName" name="parentName" required placeholder="Jana Nováková">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vk-email">Email *</label>
+                                    <input type="email" id="vk-email" name="email" required placeholder="email@priklad.cz">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vk-phone">Telefon *</label>
+                                    <input type="tel" id="vk-phone" name="phone" required placeholder="+420 xxx xxx xxx">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vk-health">Zdravotní omezení / Alergie / Dieta</label>
+                                <textarea id="vk-health" name="health" rows="3" placeholder="Prosím uveďte případné alergie, zdravotní omezení nebo speciální stravovací potřeby..."></textarea>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="vk-gdpr" name="gdpr" required>
+                                <label for="vk-gdpr">Souhlasím se zpracováním osobních údajů pro účely registrace *</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Odeslat registraci</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+
+                            <div class="form-success">
+                                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M15 25l6 6 12-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <h4>Registrace odeslána!</h4>
+                                <p>Děkujeme. Ozveme se vám s potvrzením na zadaný email.</p>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="reg-form-container reveal">
-                    <form class="reg-form" id="registrationForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                        <h3 class="form-title">Registrační formulář</h3>
-
-                        <div class="form-group">
-                            <label for="childName">Jméno a příjmení dítěte *</label>
-                            <input type="text" id="childName" name="childName" required placeholder="Jan Novák">
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="childAge">Věk *</label>
-                                <select id="childAge" name="childAge" required>
-                                    <option value="">Vyberte</option>
-                                    <option value="7">7 let</option>
-                                    <option value="8">8 let</option>
-                                    <option value="9">9 let</option>
-                                    <option value="10">10 let</option>
-                                    <option value="11">11 let</option>
-                                    <option value="12">12 let</option>
-                                    <option value="13">13 let</option>
-                                    <option value="14">14 let</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="position">Pozice</label>
-                                <select id="position" name="position">
-                                    <option value="">Vyberte</option>
-                                    <option value="brankar">Brankář</option>
-                                    <option value="obrance">Obránce</option>
-                                    <option value="zaloznik">Záložník</option>
-                                    <option value="utocnik">Útočník</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="club">Současný klub</label>
-                            <input type="text" id="club" name="club" placeholder="FK Příklad">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="termin">Termín *</label>
-                            <select id="termin" name="termin" required>
-                                <option value="">Vyberte termín</option>
-                                <option value="cervenec-2026">7. – 11. července 2026</option>
-                                <option value="srpen-2026">4. – 8. srpna 2026</option>
-                            </select>
-                        </div>
-
-                        <hr class="form-divider">
-
-                        <div class="form-group">
-                            <label for="parentName">Jméno rodiče *</label>
-                            <input type="text" id="parentName" name="parentName" required placeholder="Jana Nováková">
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required placeholder="email@priklad.cz">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Telefon *</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="+420 xxx xxx xxx">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="health">Zdravotní omezení / Alergie / Dieta</label>
-                            <textarea id="health" name="health" rows="3" placeholder="Prosím uveďte případné alergie, zdravotní omezení nebo speciální stravovací potřeby..."></textarea>
-                        </div>
-
-                        <div class="form-group form-checkbox">
-                            <input type="checkbox" id="gdpr" name="gdpr" required>
-                            <label for="gdpr">Souhlasím se zpracováním osobních údajů pro účely registrace *</label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <span>Odeslat registraci</span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </button>
-
-                        <div class="form-success" id="formSuccess">
-                            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M15 25l6 6 12-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            <h4>Registrace odeslána!</h4>
-                            <p>Děkujeme. Ozveme se vám s potvrzením na zadaný email.</p>
-                        </div>
-                    </form>
                 </div>
             </div>
+
+            <!-- Prázdninový turnus -->
+            <div class="program-panel" id="panel-prazdniny">
+                <div class="reg-layout">
+                    <div class="reg-info reveal">
+                        <div class="program-badge-row">
+                            <span class="program-type-badge">7 dní &bull; Prázdniny</span>
+                            <span class="program-capacity-badge">Max 20 dětí</span>
+                        </div>
+                        <h3 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 12px;">Prázdninový turnus</h3>
+                        <p class="section-desc" style="margin: 0 0 24px 0;">Celý týden intenzivního fotbalového rozvoje. Kompletní program s videoanalýzou, přednáškami o výživě, individuálním reportem a tréninkovým setem.</p>
+
+                        <div class="program-includes">
+                            <h4>Co je zahrnuto</h4>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    7 dní intenzivního tréninku s profi trenéry
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Videoanalýza &amp; individuální hráčský report
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Přednášky o výživě &amp; výživový plán
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Tréninkový set (mikina, tepláky, tričko, kraťasy)
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Plná penze, ubytování &amp; zdravotník
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    Online přístup k prezentacím z přednášek
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="reg-terminy">
+                            <h4>Termíny 2026</h4>
+                            <div class="termin-card">
+                                <div class="termin-dates">
+                                    <span class="termin-month">Červenec</span>
+                                    <span class="termin-range">6. &ndash; 12. 7. 2026</span>
+                                </div>
+                                <span class="termin-status status-open">Volná místa</span>
+                            </div>
+                            <div class="termin-card">
+                                <div class="termin-dates">
+                                    <span class="termin-month">Srpen</span>
+                                    <span class="termin-range">3. &ndash; 9. 8. 2026</span>
+                                </div>
+                                <span class="termin-status status-open">Volná místa</span>
+                            </div>
+                        </div>
+
+                        <div class="reg-price">
+                            <span class="price-label">Cena za turnus</span>
+                            <span class="price-amount">6 000 Kč</span>
+                            <span class="price-note">včetně všech služeb, stravy, ubytování a tréninkového setu</span>
+                        </div>
+                    </div>
+
+                    <div class="reg-form-container reveal">
+                        <form class="reg-form" id="registrationFormPrazdniny" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <input type="hidden" name="program" value="Prázdninový turnus">
+                            <h3 class="form-title">Registrace &mdash; Prázdninový turnus</h3>
+
+                            <div class="form-group">
+                                <label for="pt-childName">Jméno a příjmení dítěte *</label>
+                                <input type="text" id="pt-childName" name="childName" required placeholder="Jan Novák">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pt-childAge">Věk *</label>
+                                    <select id="pt-childAge" name="childAge" required>
+                                        <option value="">Vyberte</option>
+                                        <option value="7">7 let</option>
+                                        <option value="8">8 let</option>
+                                        <option value="9">9 let</option>
+                                        <option value="10">10 let</option>
+                                        <option value="11">11 let</option>
+                                        <option value="12">12 let</option>
+                                        <option value="13">13 let</option>
+                                        <option value="14">14 let</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pt-position">Pozice</label>
+                                    <select id="pt-position" name="position">
+                                        <option value="">Vyberte</option>
+                                        <option value="brankar">Brankář</option>
+                                        <option value="obrance">Obránce</option>
+                                        <option value="zaloznik">Záložník</option>
+                                        <option value="utocnik">Útočník</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pt-club">Současný klub</label>
+                                <input type="text" id="pt-club" name="club" placeholder="FK Příklad">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pt-termin">Termín *</label>
+                                <select id="pt-termin" name="termin" required>
+                                    <option value="">Vyberte termín</option>
+                                    <option value="turnus-cervenec-2026">6. – 12. července 2026</option>
+                                    <option value="turnus-srpen-2026">3. – 9. srpna 2026</option>
+                                </select>
+                            </div>
+
+                            <hr class="form-divider">
+
+                            <div class="form-group">
+                                <label for="pt-parentName">Jméno rodiče *</label>
+                                <input type="text" id="pt-parentName" name="parentName" required placeholder="Jana Nováková">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pt-email">Email *</label>
+                                    <input type="email" id="pt-email" name="email" required placeholder="email@priklad.cz">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pt-phone">Telefon *</label>
+                                    <input type="tel" id="pt-phone" name="phone" required placeholder="+420 xxx xxx xxx">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pt-health">Zdravotní omezení / Alergie / Dieta</label>
+                                <textarea id="pt-health" name="health" rows="3" placeholder="Prosím uveďte případné alergie, zdravotní omezení nebo speciální stravovací potřeby..."></textarea>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="pt-gdpr" name="gdpr" required>
+                                <label for="pt-gdpr">Souhlasím se zpracováním osobních údajů pro účely registrace *</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Odeslat registraci</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+
+                            <div class="form-success">
+                                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M15 25l6 6 12-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <h4>Registrace odeslána!</h4>
+                                <p>Děkujeme. Ozveme se vám s potvrzením na zadaný email.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

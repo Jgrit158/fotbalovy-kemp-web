@@ -216,42 +216,70 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ============================================
-    // FORM HANDLING
+    // PROGRAM TABS
     // ============================================
-    const form = document.getElementById('registrationForm');
-    const formSuccess = document.getElementById('formSuccess');
+    const programTabs = document.querySelectorAll('.program-tab');
+    const programPanels = document.querySelectorAll('.program-panel');
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
+    programTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.dataset.program;
 
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<span>Odesílám...</span>';
-        submitBtn.disabled = true;
+            // Update tabs
+            programTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
 
-        try {
-            const formData = new FormData(form);
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                // Hide form fields, show success
-                const formElements = form.querySelectorAll('.form-group, .form-row, .form-divider, .form-title, .form-checkbox, button');
-                formElements.forEach(el => el.style.display = 'none');
-                formSuccess.style.display = 'block';
-            } else {
-                throw new Error('Form submission failed');
+            // Update panels
+            programPanels.forEach(p => p.classList.remove('active'));
+            const targetPanel = document.getElementById('panel-' + target);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+                // Re-trigger reveal animations in new panel
+                targetPanel.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+                    revealObserver.observe(el);
+                });
             }
-        } catch (error) {
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-            alert('Omlouváme se, došlo k chybě. Zkuste to prosím znovu nebo nás kontaktujte emailem.');
-        }
+        });
+    });
+
+    // ============================================
+    // FORM HANDLING (both forms)
+    // ============================================
+    const forms = document.querySelectorAll('.reg-form');
+
+    forms.forEach(form => {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const formSuccess = form.querySelector('.form-success');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span>Odesílám...</span>';
+            submitBtn.disabled = true;
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    const formElements = form.querySelectorAll('.form-group, .form-row, .form-divider, .form-title, .form-checkbox, button');
+                    formElements.forEach(el => el.style.display = 'none');
+                    formSuccess.style.display = 'block';
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                alert('Omlouváme se, došlo k chybě. Zkuste to prosím znovu nebo nás kontaktujte emailem.');
+            }
+        });
     });
 
     // ============================================
