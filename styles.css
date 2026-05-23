@@ -90,25 +90,12 @@ img { max-width: 100%; display: block; }
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    color: var(--text-white);
-    letter-spacing: 0.08em;
-    font-weight: 700;
+}
+
+.nav-logo-img {
+    height: 44px;
+    width: auto;
     transition: var(--transition);
-}
-
-.nav.scrolled .nav-logo {
-    color: var(--text-dark);
-}
-
-.nav-logo strong {
-    color: var(--accent);
-}
-
-.nav-logo svg {
-    color: var(--accent);
 }
 
 .nav-links {
