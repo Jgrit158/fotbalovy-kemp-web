@@ -249,6 +249,7 @@ img { max-width: 100%; display: block; }
     justify-content: center;
     max-width: 700px;
     text-align: left;
+    padding-left: 60px;
 }
 
 .hero-badge {
@@ -380,10 +381,11 @@ img { max-width: 100%; display: block; }
 .hero-stats {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 48px;
 }
 
-.stat { text-align: left; }
+.stat { text-align: center; }
 
 .stat-number {
     display: block;
@@ -396,7 +398,7 @@ img { max-width: 100%; display: block; }
 
 .stat-label {
     font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--text-white);
     margin-top: 6px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -1413,8 +1415,9 @@ img { max-width: 100%; display: block; }
     .nav-toggle.active span:nth-child(2) { opacity: 0; }
     .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
+    .hero-content { padding-left: 0; }
     .hero-actions { flex-direction: column; }
-    .hero-stats { flex-direction: column; gap: 24px; align-items: flex-start; }
+    .hero-stats { flex-direction: column; gap: 24px; align-items: center; }
     .stat-divider { width: 40px; height: 1px; }
     .hero-scroll { display: none; }
 
