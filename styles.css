@@ -9,9 +9,9 @@
     --bg-dark: #1a1a1a;
     --bg-dark-2: #222222;
     --bg-dark-3: #2a2a2a;
-    --accent: #c8ff00;
-    --accent-dark: #a8dd00;
-    --accent-glow: rgba(200, 255, 0, 0.15);
+    --accent: #c9e830;
+    --accent-dark: #b0cc20;
+    --accent-glow: rgba(201, 232, 48, 0.15);
     --text-white: #ffffff;
     --text-dark: #0a0a0a;
     --text-dark-2: #4a4a4a;
@@ -96,22 +96,22 @@ img { max-width: 100%; display: block; }
     height: 53px;
     width: auto;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: drop-shadow(0 0 8px rgba(200, 255, 0, 0.4)) drop-shadow(0 0 20px rgba(200, 255, 0, 0.15));
+    filter: drop-shadow(0 0 8px rgba(201, 232, 48, 0.4)) drop-shadow(0 0 20px rgba(201, 232, 48, 0.15));
     animation: logoPulseGlow 3s ease-in-out infinite;
 }
 
 .nav-logo-img:hover {
-    filter: drop-shadow(0 0 16px rgba(200, 255, 0, 0.7)) drop-shadow(0 0 40px rgba(200, 255, 0, 0.35));
+    filter: drop-shadow(0 0 16px rgba(201, 232, 48, 0.7)) drop-shadow(0 0 40px rgba(201, 232, 48, 0.35));
     transform: scale(1.08);
     animation: none;
 }
 
 @keyframes logoPulseGlow {
     0%, 100% {
-        filter: drop-shadow(0 0 6px rgba(200, 255, 0, 0.3)) drop-shadow(0 0 16px rgba(200, 255, 0, 0.1));
+        filter: drop-shadow(0 0 6px rgba(201, 232, 48, 0.3)) drop-shadow(0 0 16px rgba(201, 232, 48, 0.1));
     }
     50% {
-        filter: drop-shadow(0 0 12px rgba(200, 255, 0, 0.55)) drop-shadow(0 0 28px rgba(200, 255, 0, 0.2));
+        filter: drop-shadow(0 0 12px rgba(201, 232, 48, 0.55)) drop-shadow(0 0 28px rgba(201, 232, 48, 0.2));
     }
 }
 
@@ -232,7 +232,7 @@ img { max-width: 100%; display: block; }
     position: absolute;
     width: 3px;
     height: 3px;
-    background: rgba(200,255,0,0.4);
+    background: rgba(201,232,48,0.4);
     border-radius: 50%;
     opacity: 0;
     animation: particleFloat 8s infinite ease-in-out;
@@ -536,7 +536,7 @@ img { max-width: 100%; display: block; }
 }
 
 .section-tag-light {
-    background: rgba(200,255,0,0.15) !important;
+    background: rgba(201,232,48,0.15) !important;
     color: var(--accent) !important;
 }
 
@@ -592,7 +592,7 @@ img { max-width: 100%; display: block; }
 .pillar-card:last-child { border-right: none; }
 
 .pillar-card:hover {
-    background: linear-gradient(135deg, rgba(200,255,0,0.15), rgba(200,255,0,0.08));
+    background: linear-gradient(135deg, rgba(201,232,48,0.15), rgba(201,232,48,0.08));
     transform: translateY(-4px);
 }
 
@@ -738,7 +738,7 @@ img { max-width: 100%; display: block; }
 .team-card:last-child { border-right: none; }
 
 .team-card:hover {
-    background: linear-gradient(135deg, rgba(200,255,0,0.15), rgba(200,255,0,0.08));
+    background: linear-gradient(135deg, rgba(201,232,48,0.15), rgba(201,232,48,0.08));
     transform: translateY(-4px);
 }
 
@@ -765,7 +765,7 @@ img { max-width: 100%; display: block; }
 
 .avatar-placeholder.ambassador {
     border-color: var(--accent);
-    background: rgba(200,255,0,0.1);
+    background: rgba(201,232,48,0.1);
 }
 
 .team-badge {
@@ -882,7 +882,7 @@ img { max-width: 100%; display: block; }
     gap: 0;
     position: relative;
     z-index: 1;
-    border: 1px solid rgba(200,255,0,0.15);
+    border: 1px solid rgba(201,232,48,0.15);
 }
 
 .benefit-item {
@@ -890,8 +890,8 @@ img { max-width: 100%; display: block; }
     align-items: flex-start;
     gap: 16px;
     padding: 32px 28px;
-    border-right: 1px solid rgba(200,255,0,0.15);
-    border-bottom: 1px solid rgba(200,255,0,0.15);
+    border-right: 1px solid rgba(201,232,48,0.15);
+    border-bottom: 1px solid rgba(201,232,48,0.15);
     transition: all 0.4s;
 }
 
@@ -993,9 +993,9 @@ img { max-width: 100%; display: block; }
 }
 
 .status-open {
-    background: rgba(200,255,0,0.1);
+    background: rgba(201,232,48,0.1);
     color: var(--accent);
-    border: 1px solid rgba(200,255,0,0.2);
+    border: 1px solid rgba(201,232,48,0.2);
 }
 
 .reg-price {
@@ -1080,8 +1080,8 @@ img { max-width: 100%; display: block; }
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: var(--accent);
-    background: rgba(200,255,0,0.05);
-    box-shadow: 0 0 0 3px rgba(200,255,0,0.1);
+    background: rgba(201,232,48,0.05);
+    box-shadow: 0 0 0 3px rgba(201,232,48,0.1);
 }
 
 .form-group input::placeholder,
@@ -1199,7 +1199,7 @@ img { max-width: 100%; display: block; }
 }
 
 .program-tab:hover {
-    background: rgba(200,255,0,0.08);
+    background: rgba(201,232,48,0.08);
     color: rgba(255,255,255,0.8);
 }
 
@@ -1435,7 +1435,7 @@ img { max-width: 100%; display: block; }
     .section { padding: 80px 0; }
     .pillars-grid, .team-grid { grid-template-columns: 1fr; }
     .benefits-grid { grid-template-columns: 1fr; }
-    .benefit-item { border-right: none !important; border-bottom: 1px solid rgba(200,255,0,0.15); }
+    .benefit-item { border-right: none !important; border-bottom: 1px solid rgba(201,232,48,0.15); }
     .benefit-item:last-child { border-bottom: none; }
     .facility-grid { grid-template-columns: 1fr; }
 
