@@ -148,7 +148,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // Stats are now static - no counter animation needed
+    // ============================================
+    // COUNTER ANIMATION - stats counting up
+    // ============================================
+    const statNumbers = document.querySelectorAll('.stat-number');
+
+    function animateCounter(el) {
+        const target = parseInt(el.textContent);
+        if (isNaN(target) || target === 0) return;
+
+        el.textContent = '0';
+        const duration = 2000;
+        const steps = 60;
+        const stepTime = duration / steps;
+        const increment = target / steps;
+        let current = 0;
+
+        const counter = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                el.textContent = target;
+                clearInterval(counter);
+            } else {
+                el.textContent = Math.floor(current);
+            }
+        }, stepTime);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    statNumbers.forEach(el => counterObserver.observe(el));
 
     // ============================================
     // PARTICLES - floating ambient particles
