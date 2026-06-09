@@ -972,6 +972,41 @@ img { max-width: 100%; display: block; }
     letter-spacing: 0.1em;
 }
 
+.termin-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    background: var(--bg-dark-2);
+    border-left: 3px solid var(--accent);
+    margin-bottom: 10px;
+}
+
+.termin-month {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-white);
+    text-transform: uppercase;
+    min-width: 62px;
+}
+
+.termin-chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.termin-chip {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.7);
+    background: rgba(201,232,48,0.08);
+    border: 1px solid rgba(201,232,48,0.18);
+    padding: 4px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* Legacy single-card styles kept for prázdninový turnus */
 .termin-card {
     display: flex;
     align-items: center;
@@ -980,14 +1015,6 @@ img { max-width: 100%; display: block; }
     background: var(--bg-dark-2);
     border-left: 3px solid var(--accent);
     margin-bottom: 12px;
-}
-
-.termin-month {
-    display: block;
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--text-white);
-    text-transform: uppercase;
 }
 
 .termin-range {
@@ -1521,6 +1548,8 @@ img { max-width: 100%; display: block; }
     .program-badge-row { gap: 8px; }
     .program-type-badge, .program-capacity-badge { font-size: 0.65rem; padding: 5px 12px; }
     .termin-card { flex-direction: column; align-items: flex-start; gap: 8px; padding: 14px 16px; }
+    .termin-row { flex-wrap: wrap; gap: 8px; padding: 12px 16px; }
+    .termin-month { min-width: 100%; }
 
     /* Footer */
     .footer { padding: 48px 0 24px; }
